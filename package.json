@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "axios": "^1.8.1",
+    "bcrypt": "^5.1.1",
+    "data-forge": "^1.10.2",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  }
+}

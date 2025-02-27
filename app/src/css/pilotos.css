@@ -1,0 +1,82 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Courier New", monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #e10600;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de pilotos */
+.grid-pilotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.piloto {
+    border: 2px solid #e10600;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.piloto:hover {
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+.piloto img {
+    width: 50%;
+    height: auto;
+    border-radius: 0; 
+    margin: 10px 0;
+    border: 2px solid #e10600;
+    display: block;
+}
+
+.piloto h2 {
+    font-size: 18px;
+    color: #e10600;
+    margin-bottom: 10px;
+}
+
+/* Ajuste del botón para que esté justo debajo de la imagen */
+.piloto .moreInfo {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #e10600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.piloto .moreInfo:hover {
+    background-color: #ff0000;
+}
